@@ -21,6 +21,6 @@ In other words, 27-x=y, where x is the position of the alphabet of the letter yo
 Also, to indicate that you want a capital letter, use ^ before the letter. To not use caps, do not use ^.
 
 ### About line breaks.
-There is no line breaks.
+There is no line breaks. Just use a space.
 
 ### Sentence examples...
