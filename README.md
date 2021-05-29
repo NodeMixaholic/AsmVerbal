@@ -1,5 +1,5 @@
 # AsmVerbal
-## A verbal language inspired by Assembly, made by Sparksammy.
+## A verbal language inspired by Assembly and binary, made by Sparksammy.
 Included is a basic English to AsmVerbal translator. It is licensed under the [MIT license.](https://github.com/sparksammy/AsmVerbal/blob/main/LICENSE) This README is licensed under the [Creative Commons Attribution.](https://creativecommons.org/licenses/by/4.0/legalcode) As always you MUST follow the [Sparksammy CoC](https://github.com/sparksammy/SparksammyCOC/blob/master/COC.md) when contributing.
 
 ### About numbers
