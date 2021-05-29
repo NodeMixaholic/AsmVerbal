@@ -13,31 +13,42 @@ asmSpace = {"-"}
 print("FROM: ")
 fromStr = io.read("*l")
 output = ""
+prevCharIsNumber = false
 for i = 1, #fromStr do
     local char = fromStr:sub(i, i)
     for index,value in pairs(ABCU) do
         if char == value then
-           output = output ..  asmCapsIndicator .. asmLetter[index]
+           output = output ..  asmCapsIndicator .. asmLetter[index] 
+           prevCharIsNumber = false
         end
     end
     for index,value in pairs(abcl) do
         if char == value then
            output = output .. asmLetter[index]
+           prevCharIsNumber = false
         end
     end
     for index,value in pairs(punct) do
         if char == value then
            output = output .. asmPunct[index]
+           prevCharIsNumber = false
         end
     end
     for index,value in pairs(space) do
         if char == value then
            output = output .. asmSpace[index]
+           prevCharIsNumber = false
         end
     end
     for index,value in pairs(numbers) do
         if char == value then
-           output = output .. asmNumbers[index]
+            if prevCharIsNumber then
+                output = output .. "/" .. asmNumbers[index]
+            else
+                output = output .. asmNumbers[index]
+            end
+            
+            prevCharIsNumber = true
         end
     end
 end
