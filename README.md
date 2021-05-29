@@ -1,6 +1,6 @@
 # AsmVerbal
 ## A verbal language inspired by Assembly, made by Sparksammy.
-Included is a basic English to AsmVerbal translator. It is licensed under the [MIT license.](https://github.com/sparksammy/AsmVerbal/blob/main/LICENSE) This README is licensed under the [Creative Commons Attribution-Attribution.](https://creativecommons.org/licenses/by/4.0/legalcode)
+Included is a basic English to AsmVerbal translator. It is licensed under the [MIT license.](https://github.com/sparksammy/AsmVerbal/blob/main/LICENSE) This README is licensed under the [Creative Commons Attribution.](https://creativecommons.org/licenses/by/4.0/legalcode)
 
 ### About numbers
 * To use a digit, it is represented by using 0s, and the number of zeros will determine what digit it is.
