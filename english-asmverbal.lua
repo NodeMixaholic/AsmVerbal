@@ -10,6 +10,7 @@ asmLetter = {"11111111111111111111111111","1111111111111111111111111","111111111
 asmNumbers = {"0","00","000","0000","00000","000000","0000000","00000000","000000000","0000000000"}
 asmPunct = {"*PER*","*QUES*","*EXC*","*COM*"}
 asmSpace = {"-"}
+asmNewChar = "_"
 print("FROM: ")
 fromStr = io.read("*l")
 output = ""
@@ -18,13 +19,13 @@ for i = 1, #fromStr do
     local char = fromStr:sub(i, i)
     for index,value in pairs(ABCU) do
         if char == value then
-           output = output ..  asmCapsIndicator .. asmLetter[index] 
+           output = output .. asmNewChar .. asmCapsIndicator .. asmLetter[index] 
            prevCharIsNumber = false
         end
     end
     for index,value in pairs(abcl) do
         if char == value then
-           output = output .. asmLetter[index]
+           output = output .. asmNewChar .. asmLetter[index]
            prevCharIsNumber = false
         end
     end
@@ -45,7 +46,7 @@ for i = 1, #fromStr do
             if prevCharIsNumber then
                 output = output .. "/" .. asmNumbers[index]
             else
-                output = output .. asmNumbers[index]
+                output = output .. asmNewChar .. asmNumbers[index]
             end
             
             prevCharIsNumber = true
