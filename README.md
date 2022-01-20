@@ -10,6 +10,10 @@ Included is a basic English to AsmVerbal translator. It is licensed under the [M
 ### About spaces
 Use "-" as a space.
 
+### About new characters
+
+Use "\_" to indicate new character.
+
 ### About punctuation...
 Use *PER*/*QUES*/*EXC*/*COM* as seperators between sentences, depending on their english equivalent.  
 
